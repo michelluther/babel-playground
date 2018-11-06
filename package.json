@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel src -d lib src -d lib"
+    "build": "./node_modules/.bin/babel src -d lib src -d lib",
+    "watch": "babel-watch --watch ./src/*.*"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +13,8 @@
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0"
+  },
+  "dependencies": {
+    "chokidar": "^2.0.4"
   }
 }
